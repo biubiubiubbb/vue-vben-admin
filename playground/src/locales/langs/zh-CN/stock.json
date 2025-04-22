@@ -1,0 +1,20 @@
+{
+  "operation": {
+    "title": "股票操作管理",
+    "list": "股票操作列表",
+    "name": "股票操作",
+    "stockName": "股票名称",
+    "stockCode": "股票代码",
+    "buyAmount": "买入金额",
+    "buyDate": "买入日期",
+    "buyReason": "买入原因",
+    "sellDate": "卖出日期",
+    "sellReason": "卖出原因",
+    "profit": "收益",
+    "isSimulation": "是否模拟盘",
+    "pattern": "模式",
+    "summary": "总结",
+    "type": "类型",
+    "operation": "操作"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "operation": {
+    "title": "Stock Operation Management",
+    "list": "Stock Operation List",
+    "name": "Stock Operation",
+    "stockName": "Stock Name",
+    "stockCode": "Stock Code",
+    "buyAmount": "Buy Amount",
+    "buyDate": "Buy Date",
+    "buyReason": "Buy Reason",
+    "sellDate": "Sell Date",
+    "sellReason": "Sell Reason",
+    "profit": "Profit",
+    "isSimulation": "Is Simulation",
+    "pattern": "Pattern",
+    "summary": "Summary",
+    "type": "Type",
+    "operation": "Operation"
+  }
+}
