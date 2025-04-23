@@ -106,12 +106,19 @@ function onRefresh() {
 }
 
 function onCreate() {
-  formDrawerApi.setData({}).open();
+  formDrawerApi
+    .setState({ class: 'w-full', placement: 'right' })
+    .setData({})
+    .open();
 }
 </script>
 <template>
   <Page auto-content-height>
-    <FormDrawer />
+    <FormDrawer
+      append-to-main
+      title="基础抽屉示例"
+      title-tooltip="标题提示内容"
+    />
     <Grid :table-title="$t('stock.operation.list')">
       <template #toolbar-tools>
         <Button type="primary" @click="onCreate">
