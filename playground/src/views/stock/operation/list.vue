@@ -27,10 +27,7 @@ const [FormDrawer, formDrawerApi] = useVbenDrawer({
 
 const [Grid, gridApi] = useVbenVxeGrid({
   formOptions: {
-    fieldMappingTime: [
-      ['buyDate', ['buyStartDate', 'buyEndDate']],
-      ['sellDate', ['sellStartDate', 'sellEndDate']],
-    ],
+    fieldMappingTime: [['rangeTradeDate', ['buyDate', 'sellDate']]],
     schema: useGridFormSchema(),
     submitOnChange: true,
   },
@@ -79,7 +76,10 @@ function onActionClick(
 }
 
 function onEdit(row: StockOperationApi.StockOperation) {
-  formDrawerApi.setData(row).open();
+  formDrawerApi
+    .setState({ class: 'w-full', placement: 'right' })
+    .setData(row)
+    .open();
 }
 
 function onDelete(row: StockOperationApi.StockOperation) {

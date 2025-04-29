@@ -68,36 +68,38 @@ export function useFormSchema(): VbenFormSchema[] {
       rules: 'required',
     },
     {
-      component: 'DatePicker',
-      componentProps: {
-        showTime: true,
-      },
-      fieldName: 'buyDate',
-      label: $t('stock.operation.buyDate'),
+      component: 'InputNumber',
+      fieldName: 'profit',
+      label: $t('stock.operation.profit'),
       rules: 'required',
     },
     {
-      component: 'DatePicker',
-      componentProps: {
-        showTime: true,
-      },
-      fieldName: 'sellDate',
-      label: $t('stock.operation.sellDate'),
+      component: 'RangePicker',
+      fieldName: 'rangeTradeDate',
+      label: $t('stock.operation.rangeTradeDate'),
+      rules: 'required',
     },
     {
-      component: 'Input',
+      component: 'Textarea',
+      componentProps: {
+        allowClear: true,
+        autoSize: {
+          minRows: 3,
+        },
+      },
       fieldName: 'buyReason',
       label: $t('stock.operation.buyReason'),
     },
     {
-      component: 'Input',
+      component: 'Textarea',
+      componentProps: {
+        allowClear: true,
+        autoSize: {
+          minRows: 3,
+        },
+      },
       fieldName: 'sellReason',
       label: $t('stock.operation.sellReason'),
-    },
-    {
-      component: 'InputNumber',
-      fieldName: 'profit',
-      label: $t('stock.operation.profit'),
     },
     {
       component: 'Switch',
@@ -118,6 +120,16 @@ export function useFormSchema(): VbenFormSchema[] {
       component: 'Input',
       fieldName: 'type',
       label: $t('stock.operation.type'),
+    },
+    {
+      component: 'Rate',
+      componentProps: {
+        allowClear: true,
+        allowHalf: true,
+        count: 5,
+      },
+      fieldName: 'rate',
+      label: '可复制程度',
     },
   ];
 }

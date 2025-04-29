@@ -15,6 +15,7 @@
     "pattern": "Pattern",
     "summary": "Summary",
     "type": "Type",
-    "operation": "Operation"
+    "operation": "Operation",
+    "rangeTradeDate": "Trade Date"
   }
 }
